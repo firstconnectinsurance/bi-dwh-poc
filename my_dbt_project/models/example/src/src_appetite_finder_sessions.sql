@@ -1,8 +1,6 @@
 WITH src_appetite_finder_sessions AS (
- SELECT
- *
- FROM
- portal_hevo.appetite_finder_sessions
+SELECT *
+FROM {{ source('portal_hevo', 'appetite_finder_sessions') }}
 )
 SELECT
  id AS appetite_finder_sessions_id,
