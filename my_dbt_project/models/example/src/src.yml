@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: portal_hevo
-    schema: portal_hevo  # The schema where your table lives
+    database: poc_hevo  # 👈 This forces dbt to compile to the right database
+    schema: portal_hevo
     tables:
       - name: appetite_finder_sessions
