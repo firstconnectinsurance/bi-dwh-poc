@@ -2,7 +2,7 @@ WITH src_appetite_finder_sessions AS (
  SELECT
  *
  FROM
- poc_hevo.portal_hevo.appetite_finder_sessions
+ portal_hevo.appetite_finder_sessions
 )
 SELECT
  id AS appetite_finder_sessions_id,
