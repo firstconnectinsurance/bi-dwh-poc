@@ -11,6 +11,6 @@ lob,
  status,
  created_at,
  state,
- product,
+ product
 FROM
  src_appetite_finder_sessions
