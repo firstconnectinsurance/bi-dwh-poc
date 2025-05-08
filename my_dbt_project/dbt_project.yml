@@ -32,5 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   my_dbt_project:
     +schema: hevo_dwh
-    example:
-      +materialized: view
+    +alias: ''
+    +materialized: view
+    # Prevent dbt from auto-adding project name or schema duplication
+    +generate_schema_name: "{{ target.schema }}"
