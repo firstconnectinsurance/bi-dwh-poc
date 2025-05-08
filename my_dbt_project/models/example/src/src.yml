@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: portal_hevo
+    schema: portal_hevo  # The schema where your table lives
+    tables:
+      - name: appetite_finder_sessions
